@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <style>
+      body {
+        background-color: #222222;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .clock-section {
+      }
+      .clock-section p {
+        color: #fff;
+        font-size: 36px;
+        text-align: center;
+      }
+      .clock,
+      .dates {
+        display: inline-block;
+        background: orange;
+        height: 50px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 26px;
+        line-height: 50px;
+        padding: 10px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock-section">
+        <p>Time Now</p>
+        <div class="clock" id="clock"></div>
+        <div class="dates" id="dates"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

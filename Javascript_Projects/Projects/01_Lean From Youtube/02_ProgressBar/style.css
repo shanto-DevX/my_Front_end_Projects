@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.4s;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #6948fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .progress-container {
+  width: 450px;
+  height: 200px;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.container .progress-container .progress-bar {
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+  background-color: rgb(105, 72, 154, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.container .progress-container .progress-bar .progress {
+  width: 0%;
+  height: 100%;
+  background: #6348fe;
+}
+
+.container .progress-container .progress-bar .progress .progress-txt {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: #fff;
+  font-size: 20px;
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  color: #77f99e;
+}
+
+.container .start {
+  padding: 15px 120px;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  background: #3c1ad3;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  transition: 0.7s;
+}
+
+.container .start:hover {
+  background: #77f99e;
+  color: #fff;
+}
+
+.container .start:active {
+  background: rgb(94, 222, 145, 0.5);
+  color: #fff;
+}
