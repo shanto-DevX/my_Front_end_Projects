@@ -1,0 +1,21 @@
+body {
+  animation: color 4s infinite;
+}
+
+@keyframes color {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: springgreen;
+  }
+  100% {
+    background-color: purple;
+  }
+}
