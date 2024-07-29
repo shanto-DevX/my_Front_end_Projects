@@ -9,7 +9,10 @@
 body {
   font-family: "Bricolage Grotesque", sans-serif;
   width: 1170px;
-  margin: 20px auto;
+  margin: 250px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards {
