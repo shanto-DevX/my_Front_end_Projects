@@ -1,0 +1,60 @@
+/* 1600x992px -> Desktop*/
+@media only screen and (min-width: 1280px) and (max-width: 1600px) {
+}
+
+/* 1280x991px -> laptop*/
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    width: 97%;
+  }
+  .pricing__body .pricing__card h4 {
+    width: 50%;
+  }
+}
+
+/* 768x1024px -> Tablet*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+  .pricing__body .pricing__card h4 {
+    width: 50%;
+  }
+}
+
+/* Mobile Layout: 320px */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .pricing__body {
+    flex-wrap: wrap;
+  }
+  .pricing__body .pricing__card {
+    width: 48%;
+  }
+  .pricing__body .pricing__card:last-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  .section__header h2 {
+    font-size: 2em;
+  }
+  .section__header p {
+    font-size: 1.0625em;
+  }
+  .pricing__body .pricing__card h4 {
+    width: 50%;
+  }
+  .pricing__body {
+    flex-wrap: wrap;
+  }
+  .pricing__body .pricing__card {
+    width: 100%;
+  }
+}

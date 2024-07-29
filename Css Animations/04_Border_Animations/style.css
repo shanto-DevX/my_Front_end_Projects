@@ -1,0 +1,78 @@
+body {
+  background-color: #090b11;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "poppins";
+  color: #fff;
+}
+
+.card {
+  width: 300px;
+  background-color: #1c1f2c;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+/* -> Card With Glow Effect */
+/* .card::after,
+.card::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(red, green, blue);
+  background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095);
+  background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+
+  z-index: -1;
+  padding: 3px;
+
+  border-radius: 10px;
+}
+
+.card::before {
+  filter: blur(0.5rem);
+  opacity: 0.5;
+} */
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.card::after,
+.card::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background-image: conic-gradient(transparent 70%, blue); */
+  background-image: conic-gradient(from var(--angle), transparent 70%, blue);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+
+  z-index: -1;
+  padding: 3px;
+
+  border-radius: 10px;
+
+  animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
