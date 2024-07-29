@@ -81,17 +81,12 @@ body {
   color: var(--text-color);
 }
 
-.pricing__section {
-}
 .pricing__header {
   margin-bottom: 1.875em;
   text-align: center;
 }
 .pricing__header .pricing__time {
   display: inline-block;
-  /* height: 50px;
-  width: 250px;
-  line-height: 50px; */
   border-radius: 50px;
   background-color: #f4f6f6;
 }
@@ -166,8 +161,6 @@ hr {
 .card__list {
   padding-top: 1.875em;
   padding-bottom: 2em;
-}
-.card__list ul {
 }
 .card__list ul li {
   list-style: none;
