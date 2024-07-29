@@ -35,7 +35,7 @@ years.addEventListener("click", () => {
   p3.innerHTML = "$399.00";
 });
 
-/* const cursorDot = document.querySelector("[data-cursor-dot]");
+const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
 
 window.addEventListener("mousemove", function (e) {
@@ -55,7 +55,7 @@ window.addEventListener("mousemove", function (e) {
     },
     { duration: 500, fill: "forwards" }
   );
-}); */
+});
 
 $(document).ready(function () {
   $("a").click(function () {

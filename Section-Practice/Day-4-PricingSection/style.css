@@ -35,10 +35,10 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--dark-blue);
 
-  /* cursor: none; */
+  cursor: none;
 }
 
-/* .cursor-dot {
+.cursor-dot {
   width: 10px;
   height: 10px;
   background-color: var(--dark-blue);
@@ -58,7 +58,7 @@ body {
   border-radius: 50%;
   z-index: 1;
   pointer-events: none;
-} */
+}
 
 .container {
   width: 1170px;
