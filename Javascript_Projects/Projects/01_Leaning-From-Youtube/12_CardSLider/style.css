@@ -10,6 +10,7 @@
 html,
 body {
   min-height: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,6 +93,7 @@ body {
 
 @media (max-width: 768px) {
   .slider-wrapper {
+    max-width: 100%;
     margin: 0px 10px 40px;
   }
 
