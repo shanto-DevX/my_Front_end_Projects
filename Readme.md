@@ -12,6 +12,7 @@
 
 - [Swiper Silder](https://shanto-devx.github.io/my_Front_end_Projects/Javascript_Projects/Projects/01_Leaning-From-Youtube/12_CardSLider/)
 - [Toast Notofication](https://shanto-devx.github.io/my_Front_end_Projects/Javascript_Projects/Projects/01_Leaning-From-Youtube/13_ToastNotifictaion/index.html)
+- [Star Rating](https://shanto-devx.github.io/my_Front_end_Projects/Javascript_Projects/Projects/01_Leaning-From-Youtube/05_StarRating/index.html)
 
 ---
 
