@@ -27,3 +27,9 @@ main {
 ```javascript
 document.addEventListener("contextmenu", (e) => e.preventDefault(), false);
 ```
+
+---
+
+#### CSS দিয়ে কোন লোগ একি সাইজের করতে হলে প্রয়োজন
+
+![alt text](image-3.png)
