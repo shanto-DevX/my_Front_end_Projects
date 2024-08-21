@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Name</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="votecount__card">
+        <h1>Count Vote using Parcentage %</h1>
+        <div class="vote__input">
+          <p>Total Vote : <input type="text" id="totalVote" /></p>
+          <p>Yes Vote : <input type="text" id="yesVote" /></p>
+          <p>No Vote : <input type="text" id="noVote" /></p>
+          <p>Not Vote : <input type="text" id="notVote" /></p>
+          <button id="countVote">Count Vote</button>
+        </div>
+        <div>
+          <canvas id="pie-chart"></canvas>
+        </div>
+        <div class="vote__output">
+          <p>Total Yes Vote : <span id="total__yes"></span></p>
+          <p>Total No Vote : <span id="total__No"></span></p>
+          <p>Total Not Vote : <span id="total__Not"></span></p>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
