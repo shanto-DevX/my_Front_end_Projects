@@ -16,6 +16,10 @@
 - [Drag And Drop - StikyNote](https://shanto-devx.github.io/my_Front_end_Projects/Javascript_Projects/Projects/01_Leaning-From-Youtube/07_dragAndDrop/index.html)
 - [Password Generator](http://127.0.0.1:5501/Javascript_Projects/Projects/01_Leaning-From-Youtube/06_passWordGenerator/index.html)
 
+> Self Project
+
+- [Vote Count with Pie Chart](https://shanto-devx.github.io/my_Front_end_Projects/Javascript_Projects/Projects/Self/02_VoteCount/)
+
 ---
 
 ## Scss Projects
