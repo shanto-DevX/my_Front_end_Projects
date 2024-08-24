@@ -19,6 +19,7 @@
 > Self Project
 
 - [Vote Count with Pie Chart](https://shanto-devx.github.io/my_Front_end_Projects/Javascript_Projects/Projects/Self/02_VoteCount/)
+- [Custom RGBA Background Change](https://shanto-devx.github.io/my_Front_end_Projects/Javascript_Projects/Projects/Self/03_CustomColorChange/)
 
 ---
 
