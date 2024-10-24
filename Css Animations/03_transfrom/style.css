@@ -1,0 +1,23 @@
+body {
+  background-color: #000;
+  display: grid;
+  place-content: center;
+  /* position: relative; */
+}
+.box {
+  margin-top: 500px;
+  margin-bottom: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  animation: example 2s ease-in-out 1s infinite alternate both;
+}
+
+@keyframes example {
+  from {
+    transform: translate(-200px, -100px) rotate(0);
+  }
+  to {
+    transform: translate(200px, 100px) rotate(180deg);
+  }
+}

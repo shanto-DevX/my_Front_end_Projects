@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  color: #111111;
+}
+
+.container {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+}
+.full-width {
+  width: 1920px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+
+.full-width__hero {
+  width: 1920px;
+  height: 100vh;
+  padding: 0px 30px;
+  margin: 0 auto;
+  background: url("../img/section-bg-1.jpg");
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 100;
+}
+
+.full-width__hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.nav {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.menu a {
+  color: #777777;
+  font-weight: 500;
+  transition: color 0.3s ease-in;
+}
+.menu a:hover {
+  color: #111;
+}
+
+.btn {
+}
+
+.btn a {
+  border: 1px solid #111;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #111;
+  transition: all 0.35s ease-in;
+}
+
+.btn a:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.btn a img {
+  width: 15px;
+}
+
+.heroText {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Grotesk", system-ui;
+}
+
+.heroText h6 {
+  font-size: 26px;
+  font-weight: 400;
+}
+.heroText h1 {
+  font-size: 96px;
+  font-weight: 1.5em;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.heroText a {
+  text-align: center;
+  display: block;
+  background-color: #111;
+  color: #fff;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.35s ease-in;
+  overflow: hidden;
+  font-size: 26px;
+}
+
+.heroText a:hover {
+  transform: scale(1.1) rotate(-30deg);
+}
+
+.hero--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero--btm__left {
+  font-size: 18px;
+  border-left: 2px solid #111;
+  padding-left: 10px;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.hero--btm__right {
+}
+.hero--btm__right a {
+  font-size: 18px;
+  background: #ffffff00;
+  color: #111;
+  padding: 12px 17px;
+  border-radius: 50px;
+  border: 2px solid #111;
+  transition: all 0.35s ease-in;
+}
+
+.hero--btm__right a:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* =========== About Section =========== */
+.about {
+  padding: 100px 0px;
+}
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about__left {
+  width: 50%;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__left img {
+  max-width: 70%;
+}
+
+.about__right {
+  width: 50%;
+}

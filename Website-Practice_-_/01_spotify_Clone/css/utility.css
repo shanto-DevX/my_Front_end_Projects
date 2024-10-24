@@ -1,0 +1,28 @@
+.flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex__spacebetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .bdr {
+  border: 2px solid #ddd;
+  margin: 3px;
+} */
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg__lightblack {
+  background: var(--light-black);
+}
+

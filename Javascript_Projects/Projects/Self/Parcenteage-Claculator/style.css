@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+.container {
+  font-family: "Nunito Sans", sans-serif;
+  width: 600px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+input {
+  width: 94%;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 24px;
+  border: 1px solid teal;
+  outline: none;
+}
+
+fieldset {
+  font-size: 16px;
+  font-weight: bold;
+  color: teal;
+  border: 1px solid teal;
+}
+
+button {
+  width: 45%;
+  padding: 20px 10px;
+  border: none;
+  background: #212828;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s ease-in;
+}
+
+button:hover {
+  background: teal;
+}
+
+.results {
+  color: #212828;
+  font-size: 28px;
+  text-align: left;
+}
+
+.results h4 {
+  line-height: 0.5em;
+}
+
+/* ==================================== */
+/* medium layout : 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Tablet layout : 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    margin: 50px auto;
+  }
+}
+
+/* Mobile Layout: 320px */
+@media only screen and (max-width: 767px) {
+  .container {
+    margin: 50px auto;
+    padding: 0px 20px;
+  }
+}
+
+/* wide mobile layout: 480 */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}

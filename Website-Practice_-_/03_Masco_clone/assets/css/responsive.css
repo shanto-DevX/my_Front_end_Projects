@@ -1,0 +1,18 @@
+/* 1600x992px -> Desktop*/
+@media only screen and (min-width: 1279px) and (max-width: 1600px) {
+}
+
+/* 1280x991px -> laptop*/
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+}
+
+/* 768x1024px -> Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Mobile Layout: 320px */
+@media only screen and (max-width: 767px) {
+}
+/* 320x480px -> Mobile*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+}

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222438;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0 50px,
+      #fff1 50px 51px
+    ),
+    repeating-linear-gradient(to bottom, transparent 0 50px, #fff1 50px 51px);
+
+  position: relative;
+}
+
+form {
+  background-color: #fff;
+  width: 7%;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+form input,
+button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+form input {
+  width: 100%;
+  height: 50px;
+}
+
+/* -> form এ color এর color-swatch-wrapper পুরোটা সিলেক্ট করা হয়েছে */
+form input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+/* -> form এ color এর color-swatch  সিলেক্ট করা হয়েছে */
+form input::-webkit-color-swatch {
+  border-radius: 50px;
+}
+
+#list textarea {
+  all: unset;
+  color: #fff;
+}
+#list textarea::placeholder {
+  color: #fff;
+  font-weight: 400;
+}
+
+#list .note {
+  background-color: #333;
+  width: max-content;
+  border-top: 30px solid #e6b906;
+  border-radius: 10px;
+
+  box-shadow: 0 20px 50px #0004;
+  padding: 15px;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+}
+
+#list .note span {
+  position: absolute;
+  bottom: 102%;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-family: cursive;
+  font-size: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+
+  cursor: pointer;
+  background-color: #ff4c30;
+  color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}

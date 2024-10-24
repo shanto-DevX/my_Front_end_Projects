@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  width: 100vw;
+  background-color: #353639;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 40vw;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.votecount__card {
+  background-color: #fff;
+  padding: 20px;
+  border: 5px solid #37cc8d;
+  border-radius: 5px;
+}
+.vote__input p {
+  font-size: 1.2em;
+  line-height: 20px;
+  padding: 10px 0px;
+}
+.vote__input p input {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 12px 25px;
+  min-width: 100%;
+  border-radius: 50px;
+  outline: none;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.vote__input p input:active,
+.vote__input p input:focus {
+  border: 1px solid #ddd;
+}
+
+#countVote {
+  background-color: #37cc8d;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.vote__output {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vote__output p {
+  padding-top: 20px;
+  /* padding-bottom: 20px; */
+}
+.vote__output p span {
+  color: #37cc8d;
+  font-weight: 500;
+}
+.vote__output p:nth-child(1) span {
+  border-right: 1px solid #727272;
+  padding-right: 10px;
+}
+.vote__output p:nth-child(2) span {
+  border-right: 1px solid #727272;
+  color: red;
+  padding-right: 10px;
+}
+.vote__output p:nth-child(3) span {
+  color: rgb(95, 95, 0);
+}

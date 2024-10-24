@@ -1,0 +1,244 @@
+/* ***** Fonts ***** */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* ***** Css Variable ***** */
+
+:root {
+  /* Color */
+  --primary-navy-blue: #0a102f;
+  --primary-navy-blue-light: #0a102fcc;
+  --blue: #3147ff;
+  --lightGray: #faf9f5;
+
+  /* Fonts */
+  --ff-plus: "Plus Jakarta Sans";
+  --ff-inter: "inter";
+
+  --ff-14: 0.875em;
+  --ff-16: 1em;
+  --ff-18: 1.125em;
+  --ff-20: 1.25em;
+  --ff-24: 1.5em;
+  --ff-46: 2.875em;
+  --ff-100: 6.25em;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-inter);
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-plus);
+  color: var(--primary-navy-blue);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/****** Header ******/
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 80px;
+}
+.nav .logo {
+}
+.nav .logo img {
+}
+.nav .menu {
+  display: flex;
+  gap: 35px;
+}
+.nav .menu a {
+  color: var(--primary-navy-blue-light);
+  font-size: var(--ff-16);
+  font-weight: 600;
+}
+.nav .nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav .nav-btn a {
+  color: var(--primary-navy-blue-light);
+  font-size: var(--ff-16);
+  font-weight: 600;
+}
+.nav .nav-btn a.btn {
+  padding: 15px 30px;
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  border-radius: 50px;
+  color: #fff;
+  transition: all 0.35s ease-in-out;
+}
+.nav .nav-btn a.btn:hover {
+  background-color: #fff;
+  border: 2px solid var(--blue);
+  border-radius: 50px;
+  color: var(--blue);
+}
+
+/****** Hero ******/
+.hero__area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hero__content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.hero__area::after {
+  content: " ";
+  background-image: url(../img/asset\ 2.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.hero__area::before {
+  content: " ";
+  background-image: url(../img/asset\ 3.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.hero__content .hero__left {
+  flex-basis: 60%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.hero__content .hero__left h1 {
+  font-size: var(--ff-100);
+  line-height: 1.2em;
+  font-weight: 800;
+}
+.hero__content .hero__left p {
+  font-size: var(--ff-18);
+  padding-right: 5%;
+  line-height: 1.6em;
+  color: var(--primary-navy-blue-light);
+}
+.hero__content .hero__left .hero__subscribe {
+}
+.hero__content .hero__left .hero__subscribe .subscribe__area {
+  position: relative;
+}
+.hero__content .hero__left .hero__subscribe .subscribe__area input {
+  width: 60%;
+  padding: 20px 20px;
+  border: 1.5px solid var(--primary-navy-blue);
+  border-radius: 50px;
+  font-size: var(--ff-16);
+  font-family: var(--ff-inter);
+  font-weight: 500;
+}
+.hero__content .hero__left .hero__subscribe .subscribe__area button {
+  font-family: var(--ff-inter);
+  padding: 12px 25px;
+  background-color: var(--blue);
+  border: 1.5px solid var(--blue);
+  border-radius: 50px;
+  font-size: var(--ff-16);
+  font-weight: 500;
+  color: #fff;
+
+  position: absolute;
+  right: 41.5%;
+  top: 7.5px;
+
+  transition: all 0.35s ease-in;
+}
+.hero__content .hero__left .hero__subscribe .subscribe__area button:hover {
+  cursor: pointer;
+  border: 1.5px solid var(--blue);
+  background-color: #fff;
+  color: var(--blue);
+}
+.hero__content .hero__left .hero__subscribe p {
+  font-size: var(--ff-14);
+  padding-top: 15px;
+  font-weight: 400;
+  color: var(--primary-navy-blue-light);
+}
+.hero__content .hero__left .hero__subscribe p i {
+  font-size: var(--ff-18);
+  margin-right: 8px;
+  color: var(--blue);
+}
+
+.hero__content .hero__right {
+  position: relative;
+}
+.hero__content .hero__right .hero__img {
+}
+.hero__content .hero__right .hero__img img {
+  width: 500px;
+}
+
+.hero__video {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.hero__video i {
+  color: var(--blue);
+  font-size: 36px;
+  border: 1px solid var(--blue);
+  padding: 20px;
+  border-radius: 50px;
+  background: #fff;
+}

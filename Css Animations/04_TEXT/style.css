@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+body {
+  font-family: "Anton", sans-serif;
+  font-weight: 100;
+  background-color: #282828;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6vw;
+}
+
+h1 {
+  display: inline-block;
+}
+
+.single--text {
+  color: #fff;
+  letter-spacing: 5px;
+  /* translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0px, 0%); */
+  transition: all 0.15s ease-in;
+}
+
+.single--text:hover {
+  cursor: pointer;
+  transform: translate(0px, -5%) scale(1, 1.1);
+}
